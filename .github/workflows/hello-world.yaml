@@ -6,5 +6,5 @@ jobs:
   build: 
     runs-on: ubuntu-latest
     steps:
-      - run: echo "TODAY=$(date+%y-%m-%d)" >> &GITHUB_ENV
-      - run: ehco "HELLO WORLD , HOM NAY LA NGAY $TODAY"
+      - run: echo "TODAY=$(date +%y-%m-%d)" >> $GITHUB_ENV
+      - run: echo "HELLO WORLD , HOM NAY LA NGAY $TODAY"
